@@ -6,4 +6,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="RakeTasksCache">
+    <option name="myRootTask">
+      <RakeTaskImpl id="rake">
+        <subtasks>
+          <RakeTaskImpl description="Selects browser for automation run" fullCommand="select_browser[browser]" id="select_browser[browser]" />
+          <RakeTaskImpl description="" fullCommand="select_browser" id="select_browser" />
+        </subtasks>
+      </RakeTaskImpl>
+    </option>
+  </component>
 </module>

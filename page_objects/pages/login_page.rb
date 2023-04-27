@@ -6,7 +6,12 @@ class LoginPage < AbstractPage
     ''
   end
 
+  def login_logo_shown?
+    login_logo.present?
+  end
+  
   # Actions
+  
 
   def login(username, password)
     username_field.set username
@@ -31,5 +36,9 @@ class LoginPage < AbstractPage
 
   def login_button
     browser.button(id: 'login-button')
+  end
+
+  def login_logo
+    browser.div(class: 'login_logo')
   end
 end
