@@ -37,7 +37,7 @@ class CheckOutStepOne < AbstractPage
   def check_out_button
     browser.button(id: 'continue')
   end
-  
+
   def cancel_button
     browser.button(id: 'cancel')
   end
