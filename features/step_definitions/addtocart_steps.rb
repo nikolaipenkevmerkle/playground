@@ -13,7 +13,7 @@ Given('I am on the product list page') do
   expect(@product_page.list_shown?.to_s).to eq 'true'
 end
 
-When('I click on the add to cart button') do
+When('I add a product to cart') do
   @product_page.add_to_cart
 end
 
@@ -30,6 +30,3 @@ Then('I see the item in the cart') do
   expect(@cart_page.invenroty_item_name_shown?.to_s).to eq 'true'
 end
 
-When('I add a product to cart') do
-  pending
-end
