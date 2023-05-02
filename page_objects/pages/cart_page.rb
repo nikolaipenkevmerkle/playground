@@ -48,7 +48,7 @@ class CartPage < AbstractPage
     browser.button(id: 'continue-shopping')
   end
   def checkout_button
-    browser.button(id: 'checkout')
+    browser.element(id: 'checkout')
   end
 
 
