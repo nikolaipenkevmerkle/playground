@@ -1,6 +1,6 @@
 require_relative '../abstract/abstract_page'
 
-class CheckOutStepOne < AbstractPage
+class CheckOutStepOnePage < AbstractPage
 
   def url(_page)
     '/checkout-step-one.html'
