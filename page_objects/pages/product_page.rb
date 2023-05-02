@@ -31,6 +31,10 @@ class ProductPage < AbstractPage
     shopping_cart_link.click
   end
 
+  def click_on_burger_menu
+    burger_menu.click
+  end
+
   # Components
 
   private
@@ -68,6 +72,10 @@ class ProductPage < AbstractPage
 
   def pricebar
     browser.div(class: 'pricebar')
+  end
+
+  def burger_menu
+    browser.button(id: 'react-burger-menu-btn')
   end
 
 

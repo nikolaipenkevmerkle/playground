@@ -3,7 +3,7 @@
 class AbstractComponent
   attr_reader :component
 
-  def initialize(component)q
+  def initialize(component)
     @component = component
   end
 end
