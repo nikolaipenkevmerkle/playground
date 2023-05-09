@@ -11,22 +11,16 @@ end
 Given('I am on the product list page') do
   @product_page = ProductPage.new(browser)
   expect(@product_page.list_shown?.to_s).to eq 'true'
-end
-
-When('I add a product to cart') do
   @product_page.add_to_cart
 end
 
 Then('I see the item added to the cart') do
   expect(ProductPage.new(browser).shopping_cart_badge_shown?.to_s).to eq 'true'
-end
-
-Then('I go to the cart page') do
   @product_page.click_on_shopping_cart_link
 end
 
 Then('I see the item in the cart') do
   @cart_page = CartPage.new(browser)
-  expect(@cart_page.invenroty_item_name_shown?.to_s).to eq 'true'
+  expect(@cart_page.inventory_item_name_shown?.to_s).to eq 'true'
 end
 
