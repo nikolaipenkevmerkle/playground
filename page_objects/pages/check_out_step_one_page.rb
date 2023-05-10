@@ -7,9 +7,9 @@ class CheckOutStepOnePage < AbstractPage
   end
 
   # Actions
-  def continue_checkout_one(firstname, lastname , postcode)
+  def continue_checkout_one(firstname, lastname, postcode)
     first_name_field.set firstname
-    password_field.set lastname
+    last_name_field.set lastname
     postal_code_field.set postcode
     check_out_button.click
   end

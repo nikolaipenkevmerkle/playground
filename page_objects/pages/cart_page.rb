@@ -9,7 +9,7 @@ class CartPage < AbstractPage
   def cart_list_shown?
     cart_list.present?
   end
-  def invenroty_item_name_shown?
+  def inventory_item_name_shown?
     inventory_item_name.present?
   end
   def continue_shopping_button_shown?
@@ -48,7 +48,7 @@ class CartPage < AbstractPage
     browser.button(id: 'continue-shopping')
   end
   def checkout_button
-    browser.button(id: 'checkout')
+    browser.element(id: 'checkout')
   end
 
 
